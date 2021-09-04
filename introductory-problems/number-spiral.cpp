@@ -27,7 +27,7 @@ int main() {
 		
 		/**
 		 * 
-		 *	Eg y = 2, x = 3
+		 *  Eg y = 2, x = 3
 		 *  level is 3 so we calculate the numbers before not caring
 		 *  about the order.
 		 *  nums_before is 4 based on the level.
