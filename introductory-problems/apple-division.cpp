@@ -37,5 +37,4 @@ int main() {
 	cout << FindMinDiffDivision(arr, 0, 0, total_sum);
 
 	return 0;
-
 }
