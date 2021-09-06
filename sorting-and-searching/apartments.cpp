@@ -4,7 +4,7 @@
 
 using namespace std;
 
-bool IsAppartmentInRange(int desire, int actual, int diff) {
+bool IsApartmentInRange(int desire, int actual, int diff) {
 	return desire - diff <= actual && actual <= desire + diff;
 }
 
