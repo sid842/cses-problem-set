@@ -9,3 +9,4 @@
 
 ## Searching and Sorting
 - [Apartments](https://cses.fi/problemset/task/1084)
+- [Concert Tickets](https://cses.fi/problemset/task/1091)
