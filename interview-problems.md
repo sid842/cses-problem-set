@@ -12,3 +12,4 @@
 - [Concert Tickets](https://cses.fi/problemset/task/1091)
 - [Maximum Subarray Sum](https://cses.fi/problemset/task/1643)
 - [Stick Lengths](https://cses.fi/problemset/task/1074)
+- [Collecting Numbers](https://cses.fi/problemset/task/2216)
