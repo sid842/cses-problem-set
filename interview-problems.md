@@ -14,7 +14,8 @@
 - [Stick Lengths](https://cses.fi/problemset/task/1074)
 - [Collecting Numbers](https://cses.fi/problemset/task/2216)
 - [Traffic Lights](https://cses.fi/problemset/task/1163)
--[Sum of Four Values](https://cses.fi/problemset/task/1642)
+- [Sum of Four Values](https://cses.fi/problemset/task/1642)
+- [Subarray Sums I](https://cses.fi/problemset/task/1660)
 
 ## Dynamic Programming
 - [Coin Combinations II](https://cses.fi/problemset/task/1636)
