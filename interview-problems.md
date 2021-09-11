@@ -16,6 +16,7 @@
 - [Traffic Lights](https://cses.fi/problemset/task/1163)
 - [Sum of Four Values](https://cses.fi/problemset/task/1642)
 - [Subarray Sums I](https://cses.fi/problemset/task/1660)
+- [Room Allocation](https://cses.fi/problemset/task/1164)
 
 ## Dynamic Programming
 - [Coin Combinations II](https://cses.fi/problemset/task/1636)
