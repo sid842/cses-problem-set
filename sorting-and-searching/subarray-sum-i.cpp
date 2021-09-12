@@ -1,3 +1,6 @@
+/**
+ * Same solution works for Subarray Sum II
+ */ 
 #include <iostream>
 #include <map>
 #include <vector>
