@@ -10,6 +10,10 @@
 #include <iostream>
 
 //Policy based Data structure
+/**
+ * Normal set doesn't offer features such as order statistics. 
+ * Iterator arithmetic is also not possible for STL set.
+ */ 
 using namespace __gnu_pbds;
 
 using namespace std;
