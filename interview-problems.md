@@ -18,6 +18,8 @@
 - [Subarray Sums I](https://cses.fi/problemset/task/1660)
 - [Room Allocation](https://cses.fi/problemset/task/1164)
 - [Nested Ranges Check](https://cses.fi/problemset/task/2168)
+- [Factory Machines](https://cses.fi/problemset/task/1620)
+- [Tasks and Deadlines](https://cses.fi/problemset/task/1630)
 
 ## Dynamic Programming
 - [Coin Combinations II](https://cses.fi/problemset/task/1636)
