@@ -17,7 +17,6 @@ int main() {
 	int n, k;
 	cin >> n >> k;
 
-	set<pair<int, int>> left_set, right_set;
 	vector<int> values(n);
 
 	for(int i = 0; i < n; ++i)
@@ -33,19 +32,23 @@ int main() {
 		return 0;
 	}
 
-	vector<pair<int, int>> st;
+	vector<pair<int, int>> val_idx_vec;
 	for(int i = 0; i < k; ++i)
-		st.push_back({values[i], i});
-	sort(st.begin(), st.end());
+		val_idx_vec.push_back({values[i], i});
+	
+	sort(val_idx_vec.begin(), val_idx_vec.end());
+	
+	//Left set contains left half of sorted arr, while Right set contains right half.
+	set<pair<int, int>> left_set, right_set;
 	ll left_sum = 0, right_sum = 0;
 
 	for(int i = 0; i < k/2 + k%2; ++i) {
-		left_set.insert(st[i]);
-		left_sum += st[i].first;
+		left_set.insert(val_idx_vec[i]);
+		left_sum += val_idx_vec[i].first;
 	}
 	for(int i = k/2 + k%2; i < k; ++i) {
-		right_set.insert(st[i]);
-		right_sum += st[i].first;
+		right_set.insert(val_idx_vec[i]);
+		right_sum += val_idx_vec[i].first;
 	}
 
 	ll median = left_set.rbegin()->first;
@@ -55,6 +58,7 @@ int main() {
 		pair<int, int> prev_pair = {values[j-1], j-1};
 		pair<int, int> cur_pair = {values[k-1+j], k-1+j};
 		
+		//Remove value outside window
 		if(left_set.count(prev_pair)) {
 			left_sum -= prev_pair.first;
 			left_set.erase(prev_pair);
@@ -63,6 +67,7 @@ int main() {
 			right_set.erase(prev_pair);
 		}
 
+		//Insert new value in the window
 		if(*(left_set.rbegin()) < cur_pair) {
 			right_sum += cur_pair.first;
 			right_set.insert(cur_pair);
@@ -71,6 +76,7 @@ int main() {
 			left_set.insert(cur_pair);
 		}
 
+		//Balance the sets
 		while(left_set.size() < (k/2 + (k%2))) {
 			auto z = (*right_set.begin());
 			left_set.insert(z);
