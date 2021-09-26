@@ -26,3 +26,4 @@
 - [Coin Combinations II](https://cses.fi/problemset/task/1636)
 - [Money Sums](https://cses.fi/problemset/task/1745)
 - [Book Shop](https://cses.fi/problemset/task/1158)
+- [Array Description](https://cses.fi/problemset/task/1746)
